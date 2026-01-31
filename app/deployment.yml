@@ -13,11 +13,10 @@ spec:
         app: demo-app
     spec:
       containers:
-      - name: demo-app
-        image: myrepo/demo-app:1.0
-        ports:
-        - containerPort: 8080
-        envFrom:
-        - configMapRef:
-            name: demo-app-config
-
+        - name: demo-app
+          image: mohancloud12/myapp:9
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: demo-app-config
