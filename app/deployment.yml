@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: demo-app
-          image: mohancloud12/myapp:13
+          image: mohancloud12/myapp:15
           ports:
             - containerPort: 8080
           envFrom:
